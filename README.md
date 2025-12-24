@@ -21,13 +21,13 @@ Follow these steps to get the environment ready and run the program:
 Open your terminal and run:
 Bash
 
-sudo apt update
+sudo apt update,
 sudo apt install python3 git python3-venv ca-certificates -y
 
 2. Clone the Repository
 Bash
 
-git clone <your-repository-link-here>
+git clone https://github.com/hiddendestroyer1945/ytls.git,
 cd ytls/
 
 3. Set Up the Virtual Environment
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 Once the environment is activated, run the program using:
 Bash
 
-python3 youtube_search.py
+python3 ytsear-late.py
 
 How to use:
 
