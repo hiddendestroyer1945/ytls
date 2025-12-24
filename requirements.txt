@@ -1,0 +1,6 @@
+# YouTube search functionality
+youtube-search-python==1.6.6
+httpx==0.24.1
+
+# Optional: For handling date parsing if you expand the project
+python-dateutil==2.9.0
