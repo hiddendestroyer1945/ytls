@@ -8,8 +8,12 @@ def youtube_search_engine():
     # Using CustomSearch to apply the 'This Year' filter
     # 'EgQIAhAB' is the YouTube internal filter code for 'This Year' + 'Video'
     # We sort by uploadDate to get them in order
+    import urllib.parse
+    
     try:
-        search = CustomSearch(query, 'EgQIAhAB', limit=20)
+        # Encode spaces and special characters for the URL
+        encoded_query = urllib.parse.quote_plus(query)
+        search = CustomSearch(encoded_query, 'EgQIAhAB', limit=20)
         results = search.result(mode=ResultMode.dict).get('result', [])
         
         if not results:
